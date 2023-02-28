@@ -7,11 +7,13 @@
 @endif
 <div class="row">
     <div class="col-lg-12 margin-tb">
-        <div class="pull-left">
-            <h2>Details Of the Product</h2>
+        <div>
+            <h2>Home Page</h2>
         </div>
-        <div class="pull-right">
-            <a class="btn btn-primary" href="{{url('/p')}}">Products</a>
+        <div>
+            <button class="btn btn-dark btn-lg float-right">
+                <a href="{{url('/p')}}">Products</a>
+            </button>
         </div>
     </div>
 
