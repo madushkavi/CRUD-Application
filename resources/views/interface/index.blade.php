@@ -1,12 +1,13 @@
 @extends('interface.layout')
 @section('content')
+
 <div class="row">
     <div class="col-lg-12 margin-tb">
         <div class="pull-left">
             <h2>Products </h2>
         </div>
         <div class="pull-right">
-            <a class="btn btn-success" href="{{route('products.create')}}"> Add Product</a>
+            <a class="btn btn-primary" href="{{url('/p')}}"> Back</a>
         </div>
     </div>
 </div>
@@ -14,9 +15,9 @@
 <!-- success alert message -->
 
 @if ($message = Session::get('success'))
-        <div class="alert alert-success">
-            <p>{{ $message }}</p>
-        </div>
+<div class="alert alert-success">
+    <p>{{ $message }}</p>
+</div>
 @endif
 
 
@@ -53,5 +54,8 @@
     </tr>
     @endforeach
 </table>
+<div class="pull-right">
+    <a class="btn btn-success" href="{{route('products.create')}}"> Add Product</a>
+</div>
 
 @endsection('content')
