@@ -5,6 +5,7 @@
     <p>{{ $msg }}</p>
 </div>
 @endif
+<button type="button" class="btn btn-dark"><a href="{{url('/logout')}}">Logout</a></button>
 <div class="row">
     <div class="col-lg-12 margin-tb">
         <div>

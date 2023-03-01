@@ -16,8 +16,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/p', [ProductController::class,'index']);
-Route::get('/', [LoginController::class,'index']);
-Route::post('/done', [LoginController::class,'successlogin']);
+//Route::get('/', [LoginController::class,'index']);
+//Route::post('/done', [LoginController::class,'checklogin']);
     
 
 Route::resource('products',ProductController::class);
+//Route::resource('logins',LoginController::class);

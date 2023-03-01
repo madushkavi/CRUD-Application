@@ -29,22 +29,22 @@
         <div class="row">
             <div class="col-sm-8 offset-sm-2">
                 <h1 class="display">LOGIN </h1></br>
-                <div>
-                    <form method="post" action="{{url('/done')}}">
-                        {{csrf_field()}}
-                        <div class="form-group">
-                            <label for="email">E-mail: </label>
-                            <input type="email" class="form-control" name="email">
-                        </div>
-                        <div class="form-group">
-                            <label for="password">Password: </label>
-                            <input type="password" class="form-control" name="password">
-                        </div><br>
-                        <div class="form-group">
-                            <button type="submit" class="btn btn-primary">Login</button>
-                        </div>
-                    </form>
-                </div>
+
+                <form method="post" action="{{url('/done')}}">
+                    {{csrf_field()}}
+                    <div class="form-group">
+                        <label for="email">E-mail: </label>
+                        <input type="email" class="form-control" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password: </label>
+                        <input type="password" class="form-control" name="password">
+                    </div><br>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </div>
+                </form>
+
             </div>
         </div>
     </div>
