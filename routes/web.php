@@ -16,9 +16,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/p', [ProductController::class,'index']);
-//Route::get('/', [LoginController::class,'index']);
-//Route::post('/done', [LoginController::class,'checklogin']);
-    
+Route::get('/', [LoginController::class,'index']);
+Route::post('/done', [LoginController::class,'checklogin']);
+Route::get('/logout',[LoginController::class,'logout']             //this index file must on the view blade folder this code will redirect to that folder to show 
+);   
 
 Route::resource('products',ProductController::class);
-//Route::resource('logins',LoginController::class);
+Route::resource('logins',LoginController::class);

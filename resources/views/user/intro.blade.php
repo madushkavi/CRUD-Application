@@ -5,7 +5,10 @@
     <p>{{ $msg }}</p>
 </div>
 @endif
-<button type="button" class="btn btn-dark"><a href="{{url('/logout')}}">Logout</a></button>
+
+<form action="{{url('\logout')}}" method="post">
+    <button class="btn btn-dark" type="submit">Logout</button>
+</form>
 <div class="row">
     <div class="col-lg-12 margin-tb">
         <div>

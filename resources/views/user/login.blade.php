@@ -43,6 +43,8 @@
                     <div class="form-group">
                         <button type="submit" class="btn btn-primary">Login</button>
                     </div>
+                    <br><br><br>
+                    <a  href="{{route('logins.create')}}"> Register </a>
                 </form>
 
             </div>
