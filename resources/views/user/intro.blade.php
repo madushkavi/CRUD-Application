@@ -6,7 +6,7 @@
 </div>
 @endif
 
-<form action="{{url('\logout')}}" method="post">
+<form action="{{url('logout')}}" method="get">
     <button class="btn btn-dark" type="submit">Logout</button>
 </form>
 <div class="row">
